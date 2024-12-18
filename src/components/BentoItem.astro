@@ -1,0 +1,15 @@
+---
+interface Props {
+  class?: string
+  title: string
+}
+
+const {title} = Astro.props
+---
+
+<article class={`${Astro.props.class}
+  relative rounded-md backdrop-blur-md bg-slate-500 border border-black/10`}>
+  <h1>{title}</h1>
+
+
+</article>
