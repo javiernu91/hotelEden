@@ -3,11 +3,11 @@ import Image from "astro/components/Image.astro"
 import nevado from '../assets/nevado.jpg'
 ---
 
-<main class="relative w-full ">
+<main class="relative w-full bg-gray-50 dark:bg-gray-950">
   <Image class='w-full -z-10' src={nevado} alt='nevado de el Cocuy'/>
   <div class="absolute top-1/4 w-full">
 
-    <h1 class="w-full text-center font-medium text-4xl">Bienvenidos al PNN El Cocuy, nevado de Güicán</h1>
-    <h2 class="w-full text-center text-2xl font-semibold">Cocuy y Chita</h2>
+    <h1 class="w-full text-center font-medium text-4xl text-gray-900 dark:text-white/90">Bienvenidos al PNN El Cocuy, nevado de <strong class="text-green-500">Güicán</strong> </h1>
+    <h2 class="w-full text-center text-2xl font-semibold text-gray-900 dark:text-white/90">Cocuy y Chita</h2>
   </div>
 </main>

@@ -3,17 +3,17 @@ import { Image } from 'astro:assets';
 import logo from '../assets/logoEden.png'
 ---
 
-<nav class="w-full max-w-7xl flex justify-between px-4 py-2 mx-auto"> 
+<nav class="w-full max-w-7xl flex justify-between px-4 py-2 mx-auto bg-gray-50 dark:bg-gray-950 "> 
   <Image class="w-20 cursor-pointer" src={logo} alt="Logo Hotel el" />
-  <ul class="flex gap-4">
-    <li>
+  <ul class="flex gap-4 text-gray-900 dark:text-white/90 ">
+    <li class="hover:text-gray-800 hover:dark:text-white hover:underline">
       servicios
     </li>
-    <li>habitaciones</li>
-    <li>
+    <li class="hover:text-gray-800 hover:dark:text-white hover:underline">habitaciones</li>
+    <li class="hover:text-gray-800 hover:dark:text-white hover:underline">
       nuestros tours
     </li>
-    <li>
+    <li class="hover:text-gray-800 hover:dark:text-white hover:underline">
       blog
     </li>
   </ul>
