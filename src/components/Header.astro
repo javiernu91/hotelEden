@@ -3,12 +3,40 @@ import { Image } from 'astro:assets';
 import logo from '../assets/logoEden.png'
 ---
 
-<nav class="w-full max-w-7xl flex justify-between px-4 py-2 mx-auto bg-gray-50 dark:bg-gray-950 "> 
+<nav class="w-full max-w-7xl flex justify-between px-4 py-2 mx-auto bg-gray-50 dark:bg-gray-950 z-20 "> 
   <Image class="w-20 cursor-pointer" src={logo} alt="Logo Hotel el" />
-  <ul class="flex gap-4 text-gray-900 dark:text-white/90 ">
-    <li class="hover:text-gray-800 hover:dark:text-white hover:underline">
-      servicios
-    </li>
+  <ul class="flex gap-4 text-gray-950 dark:text-white/90">
+
+    <ul class="content-center relative">
+      <input type="checkbox" id="services-menu" class="peer hidden">
+      <label for="services-menu" class="cursor-pointer hover:text-gray-800 hover:dark:text-white hover:underline ">
+        Servicios
+      </label>
+
+      <div class="absolute left-0 top-8 mt-2 w-48 bg-white dark:bg-gray-900  rounded-b-md shadow-lg opacity-0 peer-checked:opacity-100 peer-checked:translate-y-0 transform -translate-y-2 transition-all duration-200 ease-in-out z-50 py-2">
+        <ul class="">
+          <li class="text-gray-950 dark:text-white/90 hover:dark:bg-gray-800 hover:bg-gray-100 p-2">
+            <a href="">
+              Hospedaje
+            </a>
+            </li>
+          <li class="text-gray-950 dark:text-white/90 hover:dark:bg-gray-800 hover:bg-gray-100 p-2">
+            <a href="">
+              Alimentación  
+            </a>  
+          </li>
+          <li class="text-gray-950 dark:text-white/90 hover:dark:bg-gray-800 hover:bg-gray-100 p-2">
+            <a href="">
+              Tours
+              </a>  
+          </li>
+        </ul>
+  
+      </div>
+
+    </ul>
+
+    
     <li class="hover:text-gray-800 hover:dark:text-white hover:underline">habitaciones</li>
     <li class="hover:text-gray-800 hover:dark:text-white hover:underline">
       nuestros tours
@@ -17,6 +45,7 @@ import logo from '../assets/logoEden.png'
       blog
     </li>
   </ul>
+
 </nav>
 
 <style>
