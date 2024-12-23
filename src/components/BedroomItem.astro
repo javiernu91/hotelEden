@@ -1,0 +1,37 @@
+---
+interface Props {
+  class?: string
+  title: string
+  description: string
+
+}
+
+const {title, description} = Astro.props
+---
+
+
+<article class={`${Astro.props.class} flex gap-8 py-4 my-8`}>
+  
+  <slot name="image"/>
+  
+  <div class="w-auto">
+    <div>
+      <h1 class="text-2xl text-balance font-semibold mb-4">{title}</h1>
+
+      <p class="text-pretty leading-normal mb-4">
+        {description}
+      </p>
+
+      
+    </div>
+    <div class="flex justify-between">
+      <span class="font-semibold">Servicios de la habitación</span>
+
+
+      <div>
+
+        <button class="p-2 px-4 rounded-md border">Reservar</button>
+      </div>
+    </div>
+  </div>
+</article>
