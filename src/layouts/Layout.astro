@@ -1,3 +1,8 @@
+---
+import ClientRouter from "astro/components/ClientRouter.astro"	
+---
+
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -6,6 +11,7 @@
 		<link rel="icon" type="image/svg+xml" href="/src/assets/logoEden.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Hotel El Eden Güicán</title>
+		<ClientRouter/>
 	</head>
 	<body class="bg-gray-50 dark:bg-gray-950">
 		<slot />
