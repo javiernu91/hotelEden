@@ -2,23 +2,26 @@
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import Layout from "../layouts/Layout.astro"
-
-import Image from "astro/components/Image.astro"
-import cabine from '../assets/cabaña2.jpg'
 --- 
 
 <Layout>
   <Header/>
 
 
-<main class="relative w-full bg-gray-50 dark:bg-gray-950">
-  <Image class='w-full -z-10' src={cabine} alt='nevado de el Cocuy'/>
-  <div class="absolute top-1/4 w-full">
+<main class="relative w-full h-3/4 dark:bg-gray-950 bg-cover bg-no-repeat " >
+  <div class="absolute top-1/4 w-full ">
 
-    <h1 class="w-full text-center font-medium text-4xl text-gray-900">Habitaciones en el<strong class="text-green-500">Hotel Ecoturístico el Eden</strong> </h1>
-    <h2 class="w-full text-center text-2xl font-semibold text-gray-900">Nevado de Güicán, Cocuy y Chita</h2>
+    <h1 class="w-full text-center font-medium text-4xl dark:text-white/90 text-gray-900">Habitaciones en el <strong class="text-green-500">Hotel Ecoturístico el Eden</strong> </h1>
+    <h2 class="w-full text-center text-2xl font-semibold dark:text-white/90 text-gray-900">Nevado de Güicán, Cocuy y Chita</h2>
   </div>
 </main>
   <Footer/>
 </Layout>
 
+
+<style>
+
+  main {
+    background-image: url(/public/cabaña_4.jpg);
+  }
+</style>
