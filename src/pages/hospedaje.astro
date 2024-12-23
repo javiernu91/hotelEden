@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import Layout from "../layouts/Layout.astro"
+import Bedrooms from "../components/Bedrooms.astro"
 --- 
 
 <Layout>
@@ -11,12 +12,12 @@ import Layout from "../layouts/Layout.astro"
   <main class="relative w-full h-3/4 dark:bg-gray-950 bg-cover bg-no-repeat " >
     <div class="absolute top-1/4 w-full ">
 
-      <h1 class="w-full text-center font-medium text-5xl dark:text-white/90 text-gray-900">Habitaciones en el <strong class="text-green-500">Hotel Ecoturístico el Eden</strong> </h1>
+      <h1 class="w-full text-center px-4 font-medium text-5xl dark:text-white/90 text-gray-900">Habitaciones en el <strong class="text-green-500">Hotel Ecoturístico el Eden</strong> </h1>
       <h2 class="w-full text-center text-3xl font-semibold dark:text-white/90 text-gray-900">Nevado de Güicán, Cocuy y Chita</h2>
     </div>
   </main>
 
-  <section class="max-w-7xl mx-auto dark:text-white/90 text-gray-900 py-16 text-center">
+  <section class="max-w-7xl mx-auto px-4 dark:text-white/90 text-gray-900 py-16 text-center">
     <div class="mb-8">
       <h2 class="text-3xl font-semibold">Habitaciones del Hotel Ecoturístico el Eden en Güicán de la Sierra</h2>
       <h3 class="text-2xl font-semibold">Distrufa de un ambiente calido y familiar en tu visita al PNN El Cocuy</h3>
@@ -26,6 +27,8 @@ import Layout from "../layouts/Layout.astro"
     <p class="text-pretty leading-normal my-4">Las suites del <strong>Hotel Ecoturístico El Eden en Güicán de la Sierra</strong> ofrecen un espacio acogedor, ideal para viajes en familia o placer en Güicán de la Sierra o en tu visita al <strong>Nevado en el Parque Nacional Natural El Cocuy</strong>.</p>
     <p class="text-pretty leading-normal my-4">Haz que tu visita a Güicán sea inolvidable, descansando en nuestras habitaciones y disfrutando de nuestra deliciosa gastronomía.</p>
   </section>
+
+  <Bedrooms/>
   <Footer/>
 </Layout>
 
