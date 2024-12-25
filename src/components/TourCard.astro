@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  imgSrc: string;
+  imgAlt: string;
+  slug: string;
+}
+const { imgSrc, imgAlt, title, slug } = Astro.props;
+
+---
+
+<article
+  class="max-w-72 min-h-80 h-auto rounded-xl p-4 min-w-60 mx-auto flex hover:shadow-xl hover:scale-105 hover:z-10 overflow-hidden transition ease-in-out delay-100"
+>
+  <a href={`/tours/${slug}`}>
+    <!-- <div class="bg-slate-50 w-full h-1/2 rounded-t-md"></div> -->
+    <img src={imgSrc} alt={imgAlt} class="h-1/2 w-full rounded-t-md" />
+
+    <!-- <Image src={image} /> -->
+    <div class="mt-4">
+      <h3
+        class="font-bold text-lightText dark:text-darkText text-sm text-pretty mb-2"
+      >
+        {title}
+      </h3>
+
+      <div class="h-14 overflow-hidden">
+        <p class="text-sm text-lightText dark:text-darkText overflow-hidden">
+        </p>
+      </div>
+    </div>
+  </a>
+</article>
