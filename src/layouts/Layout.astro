@@ -1,5 +1,11 @@
 ---
 import ClientRouter from "astro/components/ClientRouter.astro"	
+
+interface Props {
+	title: string;
+}
+
+const {title} = Astro.props
 ---
 
 
@@ -10,7 +16,7 @@ import ClientRouter from "astro/components/ClientRouter.astro"
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/src/assets/logoEden.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Hotel El Eden Güicán</title>
+		<title>{title}</title>
 		<ClientRouter/>
 	</head>
 	<body class="bg-gray-50 dark:bg-gray-950">
