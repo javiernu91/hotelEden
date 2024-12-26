@@ -10,9 +10,9 @@ const { imgSrc, imgAlt, title, slug } = Astro.props;
 ---
 
 <article
-  class="max-w-72 min-h-80 h-auto rounded-xl p-4 min-w-60 mx-auto flex hover:shadow-xl hover:scale-105 hover:z-10 overflow-hidden transition ease-in-out delay-100"
+  class="max-w-72 h-auto rounded-xl p-4 min-w-60 mx-auto flex justify-between hover:shadow-xl hover:scale-105 hover:z-10 overflow-hidden transition ease-in-out delay-100"
 >
-  <a href={`/tours/${slug}`}>
+  <a class="h-auto" href={`/tours/${slug}`}>
     <!-- <div class="bg-slate-50 w-full h-1/2 rounded-t-md"></div> -->
     <img src={imgSrc} alt={imgAlt} class="h-1/2 w-full rounded-t-md" />
 
@@ -24,10 +24,7 @@ const { imgSrc, imgAlt, title, slug } = Astro.props;
         {title}
       </h3>
 
-      <div class="h-14 overflow-hidden">
-        <p class="text-sm text-lightText dark:text-darkText overflow-hidden">
-        </p>
-      </div>
+
     </div>
   </a>
 </article>
