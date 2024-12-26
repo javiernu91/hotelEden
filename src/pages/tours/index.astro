@@ -1,6 +1,4 @@
 ---
-import Header from "../../components/Header.astro"
-import Footer from "../../components/Footer.astro"
 import Layout from "../../layouts/Layout.astro";
 import TourCard from "../../components/TourCard.astro";
 import { getCollection, getEntry } from "astro:content";
@@ -13,9 +11,6 @@ const tourPost =await getCollection('tours')
 --- 
 
 <Layout title="Planes en el PNN EL Cocuy">
-  <Header/>
-
-
   <main class="relative w-full h-3/4 dark:bg-gray-950 bg-cover bg-no-repeat bg-center" >
     <div class="absolute top-1/4 w-full ">
 
@@ -49,8 +44,6 @@ const tourPost =await getCollection('tours')
       }
     </ul>
   </section>
-
-  <Footer/>
 </Layout>
 
 
