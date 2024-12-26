@@ -1,7 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 type Props = CollectionEntry<'tours'>['data'];
-const {title, imgSrc, imageDescription } = Astro.props
+const {title, imgSrc, imgAlt } = Astro.props
 
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
@@ -25,7 +25,7 @@ import Footer from "../components/Footer.astro"
     <div>
       <img
         src={imgSrc}
-        alt={imageDescription}
+        alt={imgAlt}
         class="w-full object-cover my-4 md:mx-auto"
       />
     </div>
