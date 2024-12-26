@@ -1,11 +1,14 @@
 ---
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
-import Layout from "../layouts/Layout.astro"
+import Header from "../../components/Header.astro"
+import Footer from "../../components/Footer.astro"
+import Layout from "../../layouts/Layout.astro";
+import TourCard from "../../components/TourCard.astro";
+
+const tourPost = Object.values(import.meta.glob('../../content/tours/*.md', { eager: true }));
 
 --- 
 
-<Layout>
+<Layout title="Planes en el PNN EL Cocuy">
   <Header/>
 
 
@@ -26,6 +29,20 @@ import Layout from "../layouts/Layout.astro"
 
     <p class="text-pretty leading-normal my-4">Descubr el <strong>Nevado de Güicán de la Sierra</strong> y el PNN El cocuy con una variedad de experiencias únicas que están todas a tu alcance. Explora nuestros planes seleccionados de tours por los mejores destinos en tu visita al <strong>Nevado de Güicán en el Parque Nacional Natural El Cocuy</strong>.</p>
     <p class="text-pretty leading-normal my-4">Haz que tu visita a Güicán sea inolvidable, dejanos acompañar tu experiencia.</p>
+  </section>
+
+  <section>
+    <ul>
+      {
+        tourPost.map((post) => (
+          <TourCard
+            title={post.frontmatter.title}
+            imgSrc={post.frontmatter.imgSrc}
+            imgAlt={post.frontmatter.imgAlt}    
+          />
+        ))
+      }
+    </ul>
   </section>
 
   <Footer/>
