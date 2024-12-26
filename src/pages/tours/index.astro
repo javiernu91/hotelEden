@@ -3,8 +3,12 @@ import Header from "../../components/Header.astro"
 import Footer from "../../components/Footer.astro"
 import Layout from "../../layouts/Layout.astro";
 import TourCard from "../../components/TourCard.astro";
+import { getCollection, getEntry } from "astro:content";
 
-const tourPost = Object.values(import.meta.glob('../../content/tours/*.md', { eager: true }));
+// const tourPost = Object.values(import.meta.glob('tours', { eager: true }));
+
+const tourPost =await getCollection('tours')
+
 
 --- 
 
@@ -36,9 +40,10 @@ const tourPost = Object.values(import.meta.glob('../../content/tours/*.md', { ea
       {
         tourPost.map((post) => (
           <TourCard
-            title={post.frontmatter.title}
-            imgSrc={post.frontmatter.imgSrc}
-            imgAlt={post.frontmatter.imgAlt}    
+            title={post.data.title}
+            imgSrc={post.data.imgSrc}
+            imgAlt={post.data.imgAlt}
+            slug={post.id}    
           />
         ))
       }
