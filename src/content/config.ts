@@ -3,10 +3,16 @@ import { defineCollection, z } from "astro:content";
 
 // 2. Import loader(s)
 import { glob, file } from "astro/loaders";
+import { Schema } from "astro:schema";
 
 // 3. Define your collection(s)
 const tours = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/tours" }),
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    imgSrc: z.string(),
+    imgAlt: z.string(),
+  }),
 });
 
 // 4. Export a single `collections` object to register your collection(s)
