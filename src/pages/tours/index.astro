@@ -43,7 +43,7 @@ const tourPost =await getCollection('tours')
             title={post.data.title}
             imgSrc={post.data.imgSrc}
             imgAlt={post.data.imgAlt}
-            slug={post.id}    
+            slug={post.slug}    
           />
         ))
       }
