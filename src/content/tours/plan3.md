@@ -5,7 +5,7 @@ imgAlt: "Pico Cóncavo en el PNN El Cocuy"
 layout: "../../layouts/ToursLayout.astro"
 ---
 
-## Plan tres días dos noches Sierra Nevada de Güicán-Cocuy-Chita sector Laguna Grande de La Sierra, base del glaciar, pico Cóncavo.
+## Plan dos días dos noches Sierra Nevada de Güicán-Cocuy-Chita sector Laguna Grande de La Sierra, base del glaciar, pulpito del diablo
 
 Día 1 Recibimiento cabaña Hotel Eco turístico El Edén, desayuno, caminata de aclimatación en el sendero interpretativo ambiental por los caminos que conducen al Cielito, refrigerio, almuerzo, termales, cena, descanso.
 
