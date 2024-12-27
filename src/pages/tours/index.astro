@@ -11,7 +11,7 @@ const tourPost =await getCollection('tours')
 --- 
 
 <Layout title="Planes en el PNN EL Cocuy">
-  <main class="relative w-full h-3/4 dark:bg-gray-950 bg-cover bg-no-repeat bg-center" >
+  <main class="relative w-full h-svh dark:bg-gray-950 bg-cover bg-no-repeat bg-center" >
     <div class="absolute top-1/4 w-full ">
 
       <h1 class="w-full text-center px-4 font-medium text-5xl dark:text-white/90 text-gray-900">Tours en el<strong class="text-green-500">PNN El Cocuy</strong> </h1>
@@ -51,5 +51,7 @@ const tourPost =await getCollection('tours')
 
   main {
     background-image: url(/public/ritacuba.jpg);
+    Filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   }
 </style>

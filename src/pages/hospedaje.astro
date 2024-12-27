@@ -4,7 +4,7 @@ import Bedrooms from "../components/Bedrooms.astro"
 --- 
 
 <Layout title="Hospedaje en el Hotel Ecoturísitico El Eden">
-  <main class="relative w-full h-3/4 dark:bg-gray-950 bg-cover bg-no-repeat " >
+  <main class="relative w-full h-svh dark:bg-gray-950 bg-cover bg-no-repeat " >
     <div class="absolute top-1/4 w-full ">
 
       <h1 class="w-full text-center px-4 font-medium text-5xl dark:text-white/90 text-gray-900">Habitaciones en el <strong class="text-green-500">Hotel Ecoturístico el Eden</strong> </h1>
@@ -31,5 +31,7 @@ import Bedrooms from "../components/Bedrooms.astro"
 
   main {
     background-image: url(/public/cabaña_4.jpg);
+    Filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   }
 </style>

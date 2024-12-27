@@ -4,10 +4,19 @@ import nevado from '../assets/nevado.jpg'
 ---
 
 <main class="relative w-full bg-gray-50 dark:bg-gray-950">
-  <Image class='w-full -z-10' src={nevado} alt='nevado de el Cocuy'/>
+  <Image class='w-full h-auto -z-10 hero-image'  src={nevado} alt='nevado de el Cocuy' />
   <div class="absolute top-1/4 w-full">
 
     <h1 class="w-full text-center font-medium text-4xl text-gray-900 dark:text-white/90">Bienvenidos al PNN El Cocuy, nevado de <strong class="text-green-500">Güicán</strong> </h1>
     <h2 class="w-full text-center text-2xl font-semibold text-gray-900 dark:text-white/90">Cocuy y Chita</h2>
   </div>
 </main>
+
+
+
+<style>
+  .hero-image {
+    Filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
+			mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  }
+</style>
