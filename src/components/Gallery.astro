@@ -1,0 +1,56 @@
+---
+import GalleryItem from "./GalleryItem.astro"
+import nevado from "../assets/nevado.jpg"
+---
+
+<section class="flex flex-nowrap w-xl max-w-7xl mx-auto gap-4 snap-x overflow-x-scroll bar py-10" >
+
+  <GalleryItem
+    title="Imagen del nevado de el Cocuy"
+    altImage="Imagen del nevado de el Cocuy"
+    srcImage={nevado} 
+     />
+
+    
+  <GalleryItem
+  title="Imagen del nevado de el Cocuy"
+  altImage="Imagen del nevado de el Cocuy"
+  srcImage={nevado}  />
+
+  
+  <GalleryItem
+    title="Imagen del nevado de el Cocuy"
+    altImage="Imagen del nevado de el Cocuy"
+    srcImage={nevado}  />
+
+    
+  <GalleryItem
+  title="Imagen del nevado de el Cocuy"
+  altImage="Imagen del nevado de el Cocuy"
+  srcImage={nevado}  />
+
+  
+  <GalleryItem
+    title="Imagen del nevado de el Cocuy"
+    altImage="Imagen del nevado de el Cocuy"
+    srcImage={nevado}  />
+
+    
+  <GalleryItem
+  title="Imagen del nevado de el Cocuy"
+  altImage="Imagen del nevado de el Cocuy"
+  srcImage={nevado}  />
+ 
+  </section>
+
+
+  <style>
+    section{
+      scrollbar-width: none;
+
+    }
+
+    section:hover {
+      scrollbar-width: thin;
+    }
+  </style>
