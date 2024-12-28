@@ -3,54 +3,78 @@ import GalleryItem from "./GalleryItem.astro"
 import nevado from "../assets/nevado.jpg"
 ---
 
-<section class="flex flex-nowrap w-xl max-w-7xl mx-auto gap-4 snap-x overflow-x-scroll bar py-10" >
-
-  <GalleryItem
+<section class="relative w-xl max-w-7xl mx-auto gap-4 snap-mandatory overflow-x-scroll bar py-10" >
+  <div class="flex flex-nowrap gap-5">
+    <GalleryItem
+      title="Imagen del nevado de el Cocuy"
+      altImage="Imagen del nevado de el Cocuy"
+      srcImage={nevado} 
+       />
+  
+      
+    <GalleryItem
     title="Imagen del nevado de el Cocuy"
     altImage="Imagen del nevado de el Cocuy"
-    srcImage={nevado} 
-     />
-
-    
-  <GalleryItem
-  title="Imagen del nevado de el Cocuy"
-  altImage="Imagen del nevado de el Cocuy"
-  srcImage={nevado}  />
-
+    srcImage={nevado}  />
   
-  <GalleryItem
+    
+    <GalleryItem
+      title="Imagen del nevado de el Cocuy"
+      altImage="Imagen del nevado de el Cocuy"
+      srcImage={nevado}  />
+  
+      
+    <GalleryItem
+    title="Imagen del nevado de el Cocuy"
+    altImage="Imagen del nevado de el Cocuy"
+    srcImage={nevado}  />
+  
+    
+    <GalleryItem
+      title="Imagen del nevado de el Cocuy"
+      altImage="Imagen del nevado de el Cocuy"
+      srcImage={nevado}  />
+  
+      
+    <GalleryItem
     title="Imagen del nevado de el Cocuy"
     altImage="Imagen del nevado de el Cocuy"
     srcImage={nevado}  />
 
-    
-  <GalleryItem
-  title="Imagen del nevado de el Cocuy"
-  altImage="Imagen del nevado de el Cocuy"
-  srcImage={nevado}  />
+  </div>
 
-  
-  <GalleryItem
-    title="Imagen del nevado de el Cocuy"
-    altImage="Imagen del nevado de el Cocuy"
-    srcImage={nevado}  />
-
-    
-  <GalleryItem
-  title="Imagen del nevado de el Cocuy"
-  altImage="Imagen del nevado de el Cocuy"
-  srcImage={nevado}  />
  
-  </section>
+</section>
 
 
-  <style>
-    section{
-      scrollbar-width: none;
+<style>
+  section{
+    scrollbar-width: none;
 
+    > * {
+      flex: 0 0 100%;
     }
 
-    section:hover {
-      scrollbar-width: thin;
+  }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
     }
-  </style>
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+   div {
+    will-change: transform; 
+    animation: scrolling 10s linear infinite;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  div:hover {
+    animation-play-state: paused;
+  }
+</style>
