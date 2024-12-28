@@ -17,23 +17,26 @@ import Footer from "../components/Footer.astro"
 <body class="bg-gray-50 dark:bg-gray-950">
   
 <Header/>
-<main class="max-w-4xl mx-auto bg-lightBg dark:bg-darkBg prose dark:text-gray-50">
-  <section class="max-w-6xl mx-4 lg:mx-auto max-sm:mx-0 my-0">
-    <h2 class="text-4xl mb-2 font-bold text-pretty sm:text-4xl max-sm:mx-4 dark:text-gray-50">
+<main class="max-w-7xl mx-auto bg-lightBg dark:bg-darkBg prose dark:text-gray-50">
+  <section class="max-w-7xl mx-4 lg:mx-auto max-sm:mx-0 my-0">
+    <h2 class="text-4xl mb-2 font-bold text-pretty sm:text-4xl max-sm:mx-4 dark:text-gray-50 text-center">
       {title}
     </h2>
-    <div>
-      <img
-        src={imgSrc}
-        alt={imgAlt}
-        class="w-full object-cover my-4 md:mx-auto"
-      />
+    <div class="grid grid-cols-6 gap-16">
+      <div class="col-span-2">
+        <img
+          src={imgSrc}
+          alt={imgAlt}
+          class="w-full object-cover md:mx-auto mt-16"
+        />
+      </div>
+      <div
+        class="col-span-4 md:px-0 max-sm:mx-4 text-lightText dark:text-darkText text-pretty font-normal text-lg dark:text-gray-50"
+      >
+        <slot />
+      </div>
     </div>
-    <div
-      class="md:px-0 max-sm:mx-4 text-lightText dark:text-darkText text-pretty font-normal text-lg dark:text-gray-50"
-    >
-      <slot />
-    </div>
+    
   </section>
 </main>
 
