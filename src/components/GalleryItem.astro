@@ -1,0 +1,19 @@
+---
+import Picture from "astro/components/Picture.astro"
+
+interface Props {
+  class?: string
+  altImage: string
+  srcImage: ImageMetadata
+  title: string
+}
+
+const {title, altImage, srcImage} = Astro.props
+---
+
+<article class="asppect-[4/3] h-full min-w-60 snap-center bg-cover bg-center bg-slate-400 relative">
+  <Picture src={srcImage} alt={altImage} class="hover:scale-105 ease-in-out duration-700"/>
+  <div class="flex flex-col absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-100 ease-in-out duration-700 p-4 backdrop-blur-sm place-content-end text-gray-900 dark:text-white/90">
+    <h2 class="font-semibold text-xl text-center ease-in-out duration-700 text-balance " >{title}</h2>    
+  </div>
+</article>
