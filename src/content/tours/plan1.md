@@ -2,7 +2,6 @@
 title: "Plan tres días dos noches Sierra Nevada de Güicán-Cocuy-Chita sector Laguna Grande de La Sierra, base del glaciar, pico Cóncavo."
 imgSrc: "/concavo.webp"
 imgAlt: "Pico Cóncavo en el PNN El Cocuy"
-layout: "../../layouts/ToursLayout.astro"
 ---
 
 ## Plan tres días dos noches Sierra Nevada de Güicán-Cocuy-Chita sector Laguna Grande de La Sierra, base del glaciar, pico Cóncavo.
