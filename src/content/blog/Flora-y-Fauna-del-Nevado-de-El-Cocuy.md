@@ -1,11 +1,10 @@
 ---
 title: "Flora y Fauna del Nevado de El Cocuy"
 pubDate: 2024-05-17
-imgSrc: "/oso.jpg"
+imgSrc: "/concavo.webp"
 imgAlt: "Pulpito del diable nevado de el cocuy"
 description: "El Parque Nacional Natural El Cocuy, situado en la región oriental de los Andes colombianos, es un refugio para una asombrosa variedad de flora y fauna. Este ecosistema único, que abarca desde bosques andinos hasta páramos y glaciares, alberga una biodiversidad rica y diversa. En este blog, exploraremos las especies más destacadas de plantas y animales que habitan en este magnífico parque."
 # tags: ["astro", "javascript"]
-layout: "../../layouts/Post.astro"
 ---
 
 El Parque Nacional Natural El Cocuy, situado en la región oriental de los Andes colombianos, es un refugio para una asombrosa variedad de flora y fauna. Este ecosistema único, que abarca desde bosques andinos hasta páramos y glaciares, alberga una biodiversidad rica y diversa. En este blog, exploraremos las especies más destacadas de plantas y animales que habitan en este magnífico parque.

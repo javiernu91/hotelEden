@@ -1,11 +1,9 @@
 ---
 title: "Mejor Época del Año para Visitar el Nevado de El Cocuy"
 pubDate: 2024-05-17
-imgSrc: "/nevado2.jpg"
+imgSrc: "/concavo.webp"
 imgAlt: "Nevado de el Cocuy"
 description: "El Nevado de El Cocuy es uno de los destinos de montaña más espectaculares de Colombia, ofreciendo vistas impresionantes, rutas de senderismo desafiantes y una rica biodiversidad. Sin embargo, para disfrutar al máximo de tu visita, es crucial elegir la época del año adecuada. En este blog, te ayudaremos a determinar el mejor momento para explorar este increíble parque nacional."
-# tags: ["astro", "javascript"]
-layout: "../../layouts/Post.astro"
 ---
 
 El Nevado de El Cocuy es uno de los destinos de montaña más espectaculares de Colombia, ofreciendo vistas impresionantes, rutas de senderismo desafiantes y una rica biodiversidad. Sin embargo, para disfrutar al máximo de tu visita, es crucial elegir la época del año adecuada. En este blog, te ayudaremos a determinar el mejor momento para explorar este increíble parque nacional.

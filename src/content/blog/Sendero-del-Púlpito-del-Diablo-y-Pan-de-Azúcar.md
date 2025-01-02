@@ -1,11 +1,9 @@
 ---
 title: "Sendero del Púlpito del Diablo y Pan de Azúcar"
 pubDate: 2024-05-18
-imgSrc: "/pulpito.jpg"
+imgSrc: "/concavo.webp"
 imgAlt: "Pulpito del diablo"
 description: "El Nevado de El Cocuy es conocido por sus paisajes impresionantes y rutas de senderismo desafiantes. Entre las rutas más emblemáticas se encuentra la caminata al Púlpito del Diablo y Pan de Azúcar. Este recorrido no solo ofrece vistas espectaculares, sino también la oportunidad de experimentar la majestuosidad de los Andes colombianos. En este blog, te proporcionamos toda la información que necesitas para planificar y disfrutar de esta inolvidable aventura"
-# tags: ["astro", "javascript"]
-layout: "../../layouts/Post.astro"
 ---
 
 El Nevado de El Cocuy es conocido por sus paisajes impresionantes y rutas de senderismo desafiantes. Entre las rutas más emblemáticas se encuentra la caminata al Púlpito del Diablo y Pan de Azúcar. Este recorrido no solo ofrece vistas espectaculares, sino también la oportunidad de experimentar la majestuosidad de los Andes colombianos. En este blog, te proporcionamos toda la información que necesitas para planificar y disfrutar de esta inolvidable aventura.

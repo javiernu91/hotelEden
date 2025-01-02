@@ -1,12 +1,10 @@
 ---
 title: "Requisitos y Permisos para Visitar el Parque Nacional Natural El Cocuy"
 pubDate: 2024-05-17
-imgSrc: "/nevado3.jpg"
+imgSrc: "/concavo.webp"
 imgAlt: "Cumbre en el pan de azucar, con vista al pulpito del diable nevado de el cocuy"
 description: "El Parque Nacional Natural El Cocuy es un destino espectacular que atrae a aventureros y amantes de la naturaleza de todo el mundo. Sin embargo, debido a su delicado ecosistema y a las regulaciones necesarias para protegerlo, es crucial estar bien informado sobre los requisitos y permisos antes de planificar tu visita. En este blog, te proporcionamos toda la información que necesitas para asegurarte de cumplir con todas las normativas y disfrutar de una experiencia segura y respetuosa en este maravilloso parque.
 "
-# tags: ["astro", "javascript"]
-layout: "../../layouts/Post.astro"
 ---
 
 El Parque Nacional Natural El Cocuy es un destino espectacular que atrae a aventureros y amantes de la naturaleza de todo el mundo. Sin embargo, debido a su delicado ecosistema y a las regulaciones necesarias para protegerlo, es crucial estar bien informado sobre los requisitos y permisos antes de planificar tu visita. En este blog, te proporcionamos toda la información que necesitas para asegurarte de cumplir con todas las normativas y disfrutar de una experiencia segura y respetuosa en este maravilloso parque.

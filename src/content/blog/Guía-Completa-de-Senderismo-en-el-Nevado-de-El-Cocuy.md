@@ -1,11 +1,9 @@
 ---
 title: "Guía Completa de Senderismo en el Nevado de El Cocuy"
 pubDate: 2024-05-17
-imgSrc: "/nevado1.jpg"
+imgSrc: "/concavo.webp"
 imgAlt: "Pulpito del diable nevado de el cocuy"
 description: "El Nevado de El Cocuy, ubicado en la cordillera Oriental de los Andes en Colombia, es uno de los destinos de senderismo más impresionantes y desafiantes del país. Con picos que alcanzan los 5,330 metros sobre el nivel del mar, ofrece paisajes espectaculares, glaciares, lagunas y una biodiversidad única. En esta guía, te proporcionamos toda la información necesaria para planificar tu aventura en este majestuoso parque nacional."
-# tags: ["astro", "javascript"]
-layout: "../../layouts/Post.astro"
 ---
 
 El Nevado de El Cocuy, ubicado en la cordillera Oriental de los Andes en Colombia, es uno de los destinos de senderismo más impresionantes y desafiantes del país. Con picos que alcanzan los 5,330 metros sobre el nivel del mar, ofrece paisajes espectaculares, glaciares, lagunas y una biodiversidad única. En esta guía, te proporcionamos toda la información necesaria para planificar tu aventura en este majestuoso parque nacional.

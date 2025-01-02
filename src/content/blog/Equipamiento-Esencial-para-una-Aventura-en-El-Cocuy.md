@@ -1,7 +1,7 @@
 ---
 title: "Equipamiento Esencial para una Aventura en El Cocuy"
 pubDate: 2024-05-17
-imgSrc: "/nevado4.jpg"
+imgSrc: "/concavo.webp"
 imgAlt: "Nevado de el cocuy"
 description: "El Nevado de El Cocuy es un paraíso para los amantes de la naturaleza y el senderismo. Con sus impresionantes picos nevados, lagunas cristalinas y paisajes alpinos, ofrece una experiencia única para los aventureros. Sin embargo, debido a las condiciones extremas de alta montaña, es crucial estar bien preparado. En este blog, te proporcionamos una lista detallada del equipamiento esencial para que tu aventura en El Cocuy sea segura y agradable."
 ---
