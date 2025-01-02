@@ -2,7 +2,6 @@
 title: "Plan dos días una noche Sierra Nevada de Güicán-Cocuy-Chita sector Laguna Grande de La Sierra, base del glaciar, Ritakuwa Blanco."
 imgSrc: "/concavo.webp"
 imgAlt: "Pico Cóncavo en el PNN El Cocuy"
-layout: "../../layouts/ToursLayout.astro"
 ---
 
 ## Plan dos días una noche Sierra Nevada de Güicán-Cocuy-Chita sector Laguna Grande de La Sierra, base del glaciar, Ritakuwa Blanco.
