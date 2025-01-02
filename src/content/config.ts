@@ -15,5 +15,16 @@ const tours = defineCollection({
   }),
 });
 
+const blog = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    pubDate: z.date(),
+    imgSrc: z.string(),
+    imgAlt: z?.string(),
+    description: z.string(),
+  }),
+});
+
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { tours };
+export const collections = { tours, blog };
