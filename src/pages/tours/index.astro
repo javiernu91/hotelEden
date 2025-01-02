@@ -31,7 +31,7 @@ const tourPost =await getCollection('tours')
   </section>
 
   <section class="max-w-7xl mx-auto">
-    <ul class="grid grid-cols-4" >
+    <ul class="gap-4" >
       {
         tourPost.map((post) => (
           <TourCard
@@ -53,5 +53,14 @@ const tourPost =await getCollection('tours')
     background-image: url(/public/ritacuba.jpg);
     Filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 
+    repeat(
+      auto-fit,
+      minmax(220px, 1fr)
+    );
   }
 </style>
