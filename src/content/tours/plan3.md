@@ -2,7 +2,6 @@
 title: "Plan dos días dos noches Sierra Nevada de Güicán-Cocuy-Chita sector Laguna Grande de La Sierra, base del glaciar, pulpito del diablo."
 imgSrc: "/concavo.webp"
 imgAlt: "Pico Cóncavo en el PNN El Cocuy"
-layout: "../../layouts/ToursLayout.astro"
 ---
 
 ## Plan dos días dos noches Sierra Nevada de Güicán-Cocuy-Chita sector Laguna Grande de La Sierra, base del glaciar, pulpito del diablo

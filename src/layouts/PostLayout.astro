@@ -1,0 +1,47 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+type Props = CollectionEntry<'tours'>['data'];
+
+const {  title, pubDate, imgSrc, imageDescription } = Astro.props;
+
+const event = new Date(pubDate);
+const date = event.toDateString();
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+</head>
+<body>
+
+  <Header/>
+  <main class="max-w-4xl mx-auto bg-lightBg dark:bg-darkBg prose">
+    <section class="max-w-6xl mx-4 lg:mx-auto max-sm:mx-0 my-0">
+      <h2 class="text-4xl mb-2 font-bold text-pretty sm:text-4xl max-sm:mx-4">
+        {title}
+      </h2>
+      <time datetime={date} class="text-xs font-thin max-sm:mx-4">{date}</time>
+      <div>
+        <img
+          src={imgSrc}
+          alt={imageDescription}
+          class="w-full object-cover my-4 md:mx-auto"
+        />
+      </div>
+      <div
+        class="md:px-0 max-sm:mx-4 text-lightText dark:text-darkText text-pretty font-normal text-lg"
+      >
+        <slot />
+      </div>
+    </section>
+  </main>
+  
+  <Footer/>  
+</body>
+</html>

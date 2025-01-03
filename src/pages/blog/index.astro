@@ -1,20 +1,18 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import TourCard from "../../components/TourCard.astro";
+import BlogCard from "../../components/BlogCard.astro";
 import { getCollection, getEntry } from "astro:content";
 
-// const tourPost = Object.values(import.meta.glob('tours', { eager: true }));
-
-const tourPost =await getCollection('tours')
+const tourPost =await getCollection('blog')
 
 
 --- 
 
-<Layout title="Planes en el PNN EL Cocuy">
+<Layout title="Blog en el nevado de Güiicán PNN EL Cocuy">
   <main class="relative w-full h-svh dark:bg-gray-950 bg-cover bg-no-repeat bg-center" >
     <div class="absolute top-1/4 w-full ">
 
-      <h1 class="w-full text-center px-4 font-medium text-5xl dark:text-white/90 text-gray-900">Tours en el<strong class="text-green-500">PNN El Cocuy</strong> </h1>
+      <h1 class="w-full text-center px-4 font-medium text-5xl dark:text-white/90 text-gray-900">El Blog del<strong class="text-green-500">PNN El Cocuy</strong> </h1>
       <h2 class="w-full text-center text-3xl font-semibold dark:text-white/90 text-gray-900">Nevado de Güicán, Cocuy y Chita</h2>
     </div>
   </main>
@@ -22,11 +20,11 @@ const tourPost =await getCollection('tours')
   <section class="max-w-7xl mx-auto px-4 dark:text-white/90 text-gray-900 py-16 text-center">
     <div class="mb-8">
       <h2 class="text-3xl font-semibold">Conoce el Nevado de Güicán de la Sierra en el PNN El Cocuy</h2>
-      <h3 class="text-2xl font-semibold">Recorre un paraíso natural y descubre nuestros sitios turísticos</h3>
+      <h3 class="text-2xl font-semibold">Descubre todo lo ue necesitas saber de tu visita a nuestros sitios turísticos</h3>
 
     </div>
 
-    <p class="text-pretty leading-normal my-4">Descubr el <strong>Nevado de Güicán de la Sierra</strong> y el PNN El cocuy con una variedad de experiencias únicas que están todas a tu alcance. Explora nuestros planes seleccionados de tours por los mejores destinos en tu visita al <strong>Nevado de Güicán en el Parque Nacional Natural El Cocuy</strong>.</p>
+    <p class="text-pretty leading-normal my-4">Descubre el <strong>Nevado de Güicán de la Sierra</strong> y el PNN El cocuy con una variedad de experiencias únicas que están todas a tu alcance. Explora nuestros planes seleccionados de tours por los mejores destinos en tu visita al <strong>Nevado de Güicán en el Parque Nacional Natural El Cocuy</strong>.</p>
     <p class="text-pretty leading-normal my-4">Haz que tu visita a Güicán sea inolvidable, dejanos acompañar tu experiencia.</p>
   </section>
 
@@ -34,7 +32,7 @@ const tourPost =await getCollection('tours')
     <ul class="gap-4" >
       {
         tourPost.map((post) => (
-          <TourCard
+          <BlogCard
             title={post.data.title}
             imgSrc={post.data.imgSrc}
             imgAlt={post.data.imgAlt}
