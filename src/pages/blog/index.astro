@@ -36,7 +36,9 @@ const tourPost =await getCollection('blog')
             title={post.data.title}
             imgSrc={post.data.imgSrc}
             imgAlt={post.data.imgAlt}
-            slug={post.slug}    
+            pubDate={post.data.pubDate}
+            slug={post.slug}  
+
           />
         ))
       }
