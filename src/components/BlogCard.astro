@@ -15,22 +15,22 @@ const time = event.toDateString();
   <a href={`/blog/${slug}`}>
     <img src={imgSrc} alt={imgAlt} class="h-1/2 w-full rounded-t-md" />
 
-    <div class="mt-4">
+    <div class="flex flex-col mt-4 gap-2">
       <h3
-        class="font-bold text-sm text-pretty mb-2"
+        class="font-bold text-sm text-pretty "
       >
         {title}
       </h3>
 
       <div class="h-14 overflow-hidden">
-        <p class="text-sm overflow-hidden text-red-200">
+        <p class="text-sm overflow-hidden">
           {description}
         </p>
       </div>
 
       <time
         datetime={time}
-        class="font-thin text-xs text-gray-800 dark:text-white/70">{time}</time
+        class="font-thin text-xs text-gray-600 dark:text-white/60">{time}</time
       >
     </div>
   </a>
