@@ -1,11 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-import logo from '../assets/logo2.jpg'
+import logo from '../assets/logo.svg'
+import Logo from './Logo.astro';
 ---
 
 <nav class="relative w-full max-w-7xl flex justify-between px-4 py-2 mx-auto bg-gray-50 dark:bg-gray-950 z-20 "> 
-  <a href="/">
-    <Image class="w-20 cursor-pointer" src={logo} alt="Logo Hotel el" />  
+  <a class="sm:w-16 w-12" href="/">
+    <Logo class="cursor-pointer"/>
   </a>
   <ul class="lg:flex gap-4 text-gray-950 dark:text-white/90 hidden">
 
