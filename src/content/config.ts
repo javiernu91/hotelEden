@@ -23,6 +23,7 @@ const blog = defineCollection({
     imgSrc: z.string(),
     imgAlt: z?.string(),
     description: z.string(),
+    slug: z.string(),
   }),
 });
 
